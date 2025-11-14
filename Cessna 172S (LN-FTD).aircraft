@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Aircraft AirframeType="Aeroplane" MinimumRunwayLengthMetres="0" Name="Cessna 172S" Registration="LN-FTD" HexCode="47859A" FuelType="AvGas100LL" AlternateFuelType="AvGas100LL" FuelMeasurementType="Volume" FuelMeasurementVolumeType="Litres" FuelMeasurementMassType="Kilograms" TaxiFuel="5.300000" LandingFuel="5.000000" FinalReserveMinutes="0" MaxFuel="200.000000" WeightBalanceType="Standard" EmptyWeight="786.300000" MaximumWeight="1156.700000" EmptyArmLon="41.81" EmptyArmLat="0.00" MinimumArmLat="0.00" MaximumArmLat="0.00" Type="C172" ColourMarkings="WHITE WITH BLUE MARKINGS" ServiceCeiling="14000" Equipment1="BGLOVY" Equipment2="S" OtherCommsEquipment="" OtherNavEquipment="" PbnEquipment="" FuelContingency="0.05" HoldingMinutes="45" HourlyCost="2160" HourlyCostIncludesFuel="True" GlideAirspeed="68.00" GlideRatio="9.00" DefaultLevel="3000" EnvelopeType="DatumDistance" Envelope="35.00,680.000000,35.00,884.500000,41.00,1156.700000,47.30,1156.700000,47.30,680.400000">
+  <ClimbProfile FpmSL="729.000000" FpmSC="233.000000" IndicatedAirspeed="74.000000" FuelBurnSL="39.700000" FuelBurnSC="33.700000" />
+  <DescentProfile Fpm="-700.000000" IndicatedAirspeed="116.000000" FuelBurn="29.000000" />
+  <CruiseProfiles>
+    <CruiseProfile Name="55 %" AirspeedType="True" FuelBurn="29.800000" IndicatedAirspeed="102.000000" Airspeed="102.000000">
+      <Entry Level="1000" Airspeed="102.000000" FuelBurn="29.800000" />
+      <Entry Level="2000" Airspeed="102.000000" FuelBurn="29.800000" />
+      <Entry Level="3000" Airspeed="103.000000" FuelBurn="29.700000" />
+      <Entry Level="4000" Airspeed="103.000000" FuelBurn="29.600000" />
+      <Entry Level="5000" Airspeed="104.000000" FuelBurn="29.800000" />
+      <Entry Level="6000" Airspeed="106.000000" FuelBurn="30.000000" />
+      <Entry Level="7000" Airspeed="106.000000" FuelBurn="30.000000" />
+      <Entry Level="8000" Airspeed="107.000000" FuelBurn="30.000000" />
+      <Entry Level="9000" Airspeed="108.000000" FuelBurn="30.100000" />
+      <Entry Level="10000" Airspeed="109.000000" FuelBurn="30.200000" />
+      <Entry Level="11000" Airspeed="109.000000" FuelBurn="30.000000" />
+      <Entry Level="12000" Airspeed="110.000000" FuelBurn="29.900000" />
+      <Entry Level="13000" Airspeed="110.000000" FuelBurn="29.900000" />
+      <Entry Level="14000" Airspeed="110.000000" FuelBurn="29.900000" />
+    </CruiseProfile>
+    <CruiseProfile Name="65 %" AirspeedType="True" FuelBurn="34.400000" IndicatedAirspeed="111.000000" Airspeed="111.000000">
+      <Entry Level="1000" Airspeed="111.000000" FuelBurn="34.400000" />
+      <Entry Level="2000" Airspeed="111.000000" FuelBurn="34.400000" />
+      <Entry Level="3000" Airspeed="111.000000" FuelBurn="34.300000" />
+      <Entry Level="4000" Airspeed="112.000000" FuelBurn="34.100000" />
+      <Entry Level="5000" Airspeed="113.000000" FuelBurn="34.100000" />
+      <Entry Level="6000" Airspeed="114.000000" FuelBurn="34.100000" />
+      <Entry Level="7000" Airspeed="115.000000" FuelBurn="34.200000" />
+      <Entry Level="8000" Airspeed="116.000000" FuelBurn="34.300000" />
+      <Entry Level="9000" Airspeed="117.000000" FuelBurn="34.400000" />
+      <Entry Level="10000" Airspeed="118.000000" FuelBurn="34.400000" />
+      <Entry Level="11000" Airspeed="118.000000" FuelBurn="34.100000" />
+      <Entry Level="12000" Airspeed="119.000000" FuelBurn="33.700000" />
+      <Entry Level="13000" Airspeed="119.000000" FuelBurn="33.700000" />
+      <Entry Level="14000" Airspeed="119.000000" FuelBurn="33.700000" />
+    </CruiseProfile>
+    <CruiseProfile Name="75 %" AirspeedType="True" FuelBurn="38.600000" IndicatedAirspeed="117.000000" Airspeed="117.000000">
+      <Entry Level="1000" Airspeed="117.000000" FuelBurn="38.600000" />
+      <Entry Level="2000" Airspeed="117.000000" FuelBurn="38.600000" />
+      <Entry Level="3000" Airspeed="118.000000" FuelBurn="38.500000" />
+      <Entry Level="4000" Airspeed="119.000000" FuelBurn="38.400000" />
+      <Entry Level="5000" Airspeed="120.000000" FuelBurn="38.400000" />
+      <Entry Level="6000" Airspeed="121.000000" FuelBurn="38.400000" />
+      <Entry Level="7000" Airspeed="122.000000" FuelBurn="38.500000" />
+      <Entry Level="8000" Airspeed="123.000000" FuelBurn="38.600000" />
+      <Entry Level="9000" Airspeed="123.000000" FuelBurn="37.900000" />
+      <Entry Level="10000" Airspeed="123.000000" FuelBurn="37.100000" />
+      <Entry Level="11000" Airspeed="121.000000" FuelBurn="35.400000" />
+      <Entry Level="12000" Airspeed="119.000000" FuelBurn="33.700000" />
+      <Entry Level="13000" Airspeed="119.000000" FuelBurn="33.700000" />
+      <Entry Level="14000" Airspeed="119.000000" FuelBurn="33.700000" />
+    </CruiseProfile>
+  </CruiseProfiles>
+  <LoadingPoints>
+    <FuelLoadingPoint Name="Fuel" LeverArm="48.00" LeverArmLat="0.00" DefaultValue="200.00" Capacity="200.00" Unusable="0.00" />
+    <LoadingPoint Name="Pilot" LeverArm="37.00" LeverArmLat="0.00" DefaultValue="75.00" />
+    <LoadingPoint Name="Front Passenger" LeverArm="37.00" LeverArmLat="0.00" DefaultValue="0.00" />
+    <LoadingPoint Name="Row 1 Left" LeverArm="73.00" LeverArmLat="0.00" DefaultValue="0.00" />
+    <LoadingPoint Name="Row 1 Right" LeverArm="73.00" LeverArmLat="0.00" DefaultValue="0.00" />
+    <LoadingPoint Name="Baggage 1" LeverArm="95.00" LeverArmLat="0.00" DefaultValue="0.00" />
+    <LoadingPoint Name="Baggage 2" LeverArm="123.00" LeverArmLat="0.00" DefaultValue="0.00" />
+  </LoadingPoints>
+  <ChecklistBundle>
+    <Checklist Name="TAXI" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="Taxi Lights" Response="ON, if necessary" />
+        <CheckItem Challenge="Brakes" Response="CHECKED" />
+        <CheckItem Challenge="Flight Instruments" Response="CHECKED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Before, And When Line Up" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="STROBE light" Response="ON" />
+        <CheckItem Challenge="LAND Light" Response="ON" />
+        <CheckItem Challenge="Final and Runway" Response="CHECKED" />
+        <CheckItem Challenge="Magnetic compass" Response="CHECKED" />
+        <CheckItem Challenge="Takeoff Time" Response="LOGGED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="CLIMB" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="AIRSPEED" Response="80 KIAS" />
+        <CheckItem Challenge="THROTTLE" Response="FULL" />
+        <CheckItem Challenge="FLAPS" Response="RETRACT at safe altitude" />
+        <CheckItem Challenge="Mixture Control" Response="RICH" />
+        <CheckItem Challenge="ENGINE INSTRUMENTS" Response="CHECK" />
+        <CheckItem Challenge="PFD BARO" Response="SET" />
+        <CheckItem Challenge="Standby Altimeter" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="AFTER LANDING" FlightPhase="Postflight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Wing Flaps" Response="UP" />
+        <CheckItem Challenge="Lights" Response="AS REQUIRED" />
+        <CheckItem Challenge="Radio" Response="AS REQUIRED" />
+        <CheckItem Challenge="Landing Time" Response="LOGGED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="SHUT DOWN" FlightPhase="Postflight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Parking Brake" Response="SET" />
+        <CheckItem Challenge="Throttle" Response="IDLE" />
+        <CheckItem Challenge="Electrical Equipments" Response="OFF" />
+        <CheckItem Challenge="Avionics Switch BUS 1 and 2" Response="OFF" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUT OFF" />
+        <CheckItem Challenge="Magnetos Switch" Response="OFF" />
+        <CheckItem Challenge="Tachometer Time" Response="LOGGED" />
+        <CheckItem Challenge="Master Switch (ALT and BATT)" Response="OFF" />
+        <CheckItem Challenge="STBY BATT" Response="OFF" />
+        <CheckItem Challenge="Control Lock" Response="INSTALLED" />
+        <CheckItem Challenge="Fuel Selector Valve" Response="LEFT OR RIGHT" />
+        <CheckItem Challenge="Cleaning" Response="DONE" />
+      </Section>
+    </Checklist>
+    <Checklist Name="CRUISE" FlightPhase="DuringFlight">
+      <Section Name="N" AutoReset="True">
+        <CheckItem Challenge="POWER" Response="SET (65% - 75%)" />
+        <CheckItem Challenge="Elevator Trim Control" Response="ADJUST" />
+        <CheckItem Challenge="Mixture Control" Response="LEAN as Required" />
+        <CheckItem Challenge="Engine Instruments" Response="CHECK" />
+        <CheckItem Challenge="FUEL Quantity" Response="CHECH" />
+        <CheckItem Challenge="Heading" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="AIR WORK / STALL CHECK" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Loose Articles" Response="Secure" />
+        <CheckItem Challenge="Altitude" Response="Minimum 3000 AGL" />
+        <CheckItem Challenge="Forced Landing Area" Response="LOCATED" />
+        <CheckItem Challenge="Weight &amp; Balance" Response="CHECK" />
+        <CheckItem Challenge="Seat Belts" Response="ADJUST and LOCKED" />
+        <CheckItem Challenge="FUEL SELECTOR" Response="BOTH" />
+        <CheckItem Challenge="Mixture Control" Response="RICH" />
+        <CheckItem Challenge="Clearance Turns" Response="CHECK no Traffic" />
+      </Section>
+    </Checklist>
+    <Checklist Name="DESCENT" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Power" Response="AS DESIRED" />
+        <CheckItem Challenge="Mixture" Response="ADJUST" />
+        <CheckItem Challenge="PFD BARO" Response="SET" />
+        <CheckItem Challenge="Standby Altimeter" Response="SET" />
+        <CheckItem Challenge="FUEL SELECTOR valve" Response="BOTH" />
+        <CheckItem Challenge="Wing Flaps" Response="AS DESIRED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="APPROACH" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="ATIS" Response="RECEIVED" />
+        <CheckItem Challenge="PFD BARO" Response="SET" />
+        <CheckItem Challenge="Standby Altimeter" Response="SET" />
+        <CheckItem Challenge="Heading" Response="SET" />
+        <CheckItem Challenge="Landing Lights" Response="ON" />
+        <CheckItem Challenge="Arrival Briefing" Response="DONE" />
+      </Section>
+    </Checklist>
+    <Checklist Name="PRE LANDING" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Engine Instruments" Response="CHECKED" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL Selector" Response="BOTH" />
+        <CheckItem Challenge="Landing Lights" Response="ON" />
+        <CheckItem Challenge="Autopilot" Response="OFF" />
+        <CheckItem Challenge="Seat / Belts" Response="ADJUST / LOCKED" />
+        <CheckItem Challenge="Wing Flaps" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="DOWNWIND CHECK" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Magnetos" Response="BOTH" />
+        <CheckItem Challenge="Master Switch" Response="BOTH" />
+        <CheckItem Challenge="Landing Lights" Response="ON" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL Selector" Response="BOTH" />
+        <CheckItem Challenge="Brake Pressure" Response="CHECK" />
+        <CheckItem Challenge="Harness" Response="CHECK" />
+        <CheckItem Challenge="Doors" Response="LOCKED" />
+        <CheckItem Challenge="Landing Briefing" Response="DONE" />
+        <CheckItem Challenge="FINAL / RUNWAY" Response="CHECK" />
+      </Section>
+    </Checklist>
+    <Checklist Name="GO AROUND" FlightPhase="DuringFlight">
+      <Section Name="New Section" AutoReset="True">
+        <CheckItem Challenge="Throttle" Response="FULL POWER" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="Wing Flaps" Response="RETRACT 10° CAREFULLY" />
+        <CheckItem Challenge="Climb Speed" Response="60 - 80 KIAS" />
+        <CheckItem Challenge="Wing Flaps" Response="RETRACT 0°" />
+        <CheckItem Challenge="Trim" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="BEFORE STARTING ENGINE" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="Preflight Inspection" Response="COMPLETE" />
+        <CheckItem Challenge="Tow Bar / Chokes" Response="REMOVED and STORED" />
+        <CheckItem Challenge="Passenger Briefing" Response="COMPLETE" />
+        <CheckItem Challenge="Seats" Response="ADJUST and LOCKED" />
+        <CheckItem Challenge="Airbag Seat Belts" Response="ADJUST (verify inertia reel locking)" />
+        <CheckItem Challenge="Brakes" Response="TEST and SET" />
+        <CheckItem Challenge="Circuit Breakers" Response="CHECK IN" />
+        <CheckItem Challenge="Electrical Equipment" Response="OFF" />
+        <CheckItem Challenge="AVIONICS Switches BUS 1 and 2" Response="OFF" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="ON" />
+      </Section>
+    </Checklist>
+    <Checklist Name="STARTING ENGINE" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="Throttle Control" Response="OPEN 1/4 INCH" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="STBY BATT Switch" Response="ARM" />
+        <CheckItem Challenge="Engine Indicating System" Response="CHECK (verify no red X)" />
+        <CheckItem Challenge="BUS E Volts" Response="CHECK (verify 23 volts minimum)" />
+        <CheckItem Challenge="M BUS Volts" Response="CHECK (verify 1.5 volts or less)" />
+        <CheckItem Challenge="BATT S Amps" Response="CHECK (verify negative)" />
+        <CheckItem Challenge="STBY BATT Announciator" Response="CHECK (verify announciator shown)" />
+        <CheckItem Challenge="Propeller Area" Response="CLEAR" />
+        <CheckItem Challenge="Master Switch (BATT ONLY)" Response="ON" />
+        <CheckItem Challenge="BEACON Light Switch" Response="ON" />
+      </Section>
+      <Section Name="Engine Cold">
+        <CheckItem Challenge="FUEL PUMP" Response="ON" />
+        <CheckItem Challenge="Mixture Control" Response="SET to FULL RICH 3 to 5 sec Fuel Flow Stable then IDLE CUTOFF" />
+        <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
+      </Section>
+      <Section Name="New Section">
+        <CheckItem Challenge="MAGNETOS Switch" Response="START" />
+        <CheckItem Challenge="Mixture Control" Response="ADVANCE smoothly when engine starts" />
+        <CheckItem Challenge="Oil Pressure" Response="CHECK (green within 30 to 60 sec)" />
+        <CheckItem Challenge="Master Switch ALT" Response="ON" />
+        <CheckItem Challenge="AMPS (M BATT and BATT S)" Response="CHECK charge positive" />
+        <CheckItem Challenge="LOW VOLTS Announciator" Response="CHECK not shown" />
+        <CheckItem Challenge="NAV Light Switch" Response="ON as required" />
+        <CheckItem Challenge="AVIONICS Switch BUS 1 and 2" Response="ON" />
+        <CheckItem Challenge="Flaps" Response="UP" />
+        <CheckItem Challenge="COM Frequency" Response="SELECT (ATIS-GND-TWR)" />
+      </Section>
+    </Checklist>
+    <Checklist Name="RUN UP - BEFORE DEPARTURE" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="Nose Into Wind" Response="ALIGN" />
+        <CheckItem Challenge="Parking Brake" Response="SET" />
+        <CheckItem Challenge="Pilot and Passengers seat backs" Response="MOST UPRIGHT POSITION" />
+        <CheckItem Challenge="Seats and Belts" Response="CHECK SECURE" />
+        <CheckItem Challenge="Cabin Doors" Response="CLOSED and LOCKED" />
+        <CheckItem Challenge="Flight Controls" Response="FREE and CORRECT" />
+        <CheckItem Challenge="Flight Instruments" Response="CHECK (no red Xs)" />
+        <CheckItem Challenge="PFD BARO" Response="SET" />
+        <CheckItem Challenge="G1000 ALT SEL" Response="SET" />
+        <CheckItem Challenge="STBY Instruments" Response="SET" />
+        <CheckItem Challenge="Fuel Quantity" Response="CHECK" />
+        <CheckItem Challenge="Mixture Control" Response="CHECK" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Throttle Control" Response="1800 RPM" />
+        <CheckItem Challenge="Magnetos Switch" Response="R - BOTH - L - BOTH CHECK drop max 150/50" />
+        <CheckItem Challenge="VAC Indicator" Response="CHECK" />
+        <CheckItem Challenge="Ampmeters and Voltmeters" Response="CHECK positive charge ca. 28 V" />
+        <CheckItem Challenge="Announciators" Response="CHECK (no announciators shown)" />
+        <CheckItem Challenge="Throttle Control" Response="CHECK IDLE" />
+        <CheckItem Challenge="Throttle Control" Response="CHECK 1000 RPM" />
+        <CheckItem Challenge="Throttle Friction Lock" Response="ADJUST" />
+        <CheckItem Challenge="NAV Frequency" Response="SET" />
+        <CheckItem Challenge="GPS Flight Plan" Response="AS DESIRED" />
+        <CheckItem Challenge="XPDR" Response="SET" />
+        <CheckItem Challenge="CDI Softkey" Response="SELECT NAV Source" />
+        <CheckItem Challenge="FLAPS" Response="SET 0-10°" />
+        <CheckItem Challenge="Cabin Windows" Response="CLOSED and LOCKED" />
+        <CheckItem Challenge="Engine Failure Briefing" Response="EXPRESS PROCEDURE" />
+        <CheckItem Challenge="Outbound Routing Briefing" Response="DEFINE" />
+      </Section>
+    </Checklist>
+  </ChecklistBundle>
+</Aircraft>
