@@ -62,22 +62,6 @@
     <LoadingPoint Name="Baggage 2" LeverArm="123.00" LeverArmLat="0.00" DefaultValue="0.00" />
   </LoadingPoints>
   <ChecklistBundle>
-    <Checklist Name="TAXI" FlightPhase="Preflight">
-      <Section Name="New Section">
-        <CheckItem Challenge="Taxi Lights" Response="ON, if necessary" />
-        <CheckItem Challenge="Brakes" Response="CHECKED" />
-        <CheckItem Challenge="Flight Instruments" Response="CHECKED" />
-      </Section>
-    </Checklist>
-    <Checklist Name="Before, And When Line Up" FlightPhase="Preflight">
-      <Section Name="New Section">
-        <CheckItem Challenge="STROBE light" Response="ON" />
-        <CheckItem Challenge="LAND Light" Response="ON" />
-        <CheckItem Challenge="Final and Runway" Response="CHECKED" />
-        <CheckItem Challenge="Magnetic compass" Response="CHECKED" />
-        <CheckItem Challenge="Takeoff Time" Response="LOGGED" />
-      </Section>
-    </Checklist>
     <Checklist Name="CLIMB" FlightPhase="DuringFlight">
       <Section Name="New Section" AutoReset="True">
         <CheckItem Challenge="AIRSPEED" Response="80 KIAS" />
@@ -268,6 +252,37 @@
         <CheckItem Challenge="Cabin Windows" Response="CLOSED and LOCKED" />
         <CheckItem Challenge="Engine Failure Briefing" Response="EXPRESS PROCEDURE" />
         <CheckItem Challenge="Outbound Routing Briefing" Response="DEFINE" />
+      </Section>
+    </Checklist>
+    <Checklist Name="TAXI" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="Taxi Lights" Response="ON, if necessary" />
+        <CheckItem Challenge="Brakes" Response="CHECKED" />
+        <CheckItem Challenge="Flight Instruments" Response="CHECKED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Before, And When Line Up" FlightPhase="Preflight">
+      <Section Name="New Section">
+        <CheckItem Challenge="STROBE light" Response="ON" />
+        <CheckItem Challenge="LAND Light" Response="ON" />
+        <CheckItem Challenge="Final and Runway" Response="CHECKED" />
+        <CheckItem Challenge="Magnetic compass" Response="CHECKED" />
+        <CheckItem Challenge="Takeoff Time" Response="LOGGED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Engine Failure In Flight" FlightPhase="Emergency">
+      <Section Name="New Section">
+        <CheckItem Challenge="NOSE DOWN" Response="Trim best glide 70 KIAS" />
+        <CheckItem Challenge="SELECT FIELD" Response="CHECK SURFACE WIND" />
+        <CheckItem Challenge="ELT" Response="ON" />
+        <CheckItem Challenge="FUEL PUMP" Response="ON" />
+        <CheckItem Challenge="MAGNETOS" Response="BOTH / START" />
+        <CheckItem Challenge="MIXTURE" Response="FULL RICH" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="CHECK Full push in" />
+        <CheckItem Challenge="FUEL SELECTOR" Response="BOTH" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="CHECK Full push in" />
+        <CheckItem Challenge="RADIO" Response="MAYDAY CALL" />
+        <CheckItem Challenge="TRANSPONDER" Response="7700" />
       </Section>
     </Checklist>
   </ChecklistBundle>
