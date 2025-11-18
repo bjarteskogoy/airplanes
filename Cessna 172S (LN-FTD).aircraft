@@ -285,5 +285,83 @@
         <CheckItem Challenge="TRANSPONDER" Response="7700" />
       </Section>
     </Checklist>
+    <Checklist Name="Engine Failures" FlightPhase="Emergency">
+      <Section Name="Engine failure during takeoff roll">
+        <CheckItem Challenge="Trottle Control" Response="IDLE (pull full out)" />
+        <CheckItem Challenge="Brakes" Response="APPLY" />
+        <CheckItem Challenge="Wing Flaps" Response="RETRACT" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />      
+      </Section>
+      <Section Name="Engine failure immediatly after takeoff">
+        <CheckItem Challenge="Airspeed" Response="70 KIAS (flaps UP)" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="OFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Wing Flaps" Response="AS REQUIRED (FULL recommended)" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />      
+        <CheckItem Challenge="Cabin Door" Response="UNLATCH" />
+        <CheckItem Challenge="Land" Response="STRAIGHT AHEAD" />
+      </Section>
+      <Section Name="Engine failure during flight (Restart Procedures)">
+        <CheckItem Challenge="Airspeed" Response="68 KIAS (best glide speed)" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="ON (push full in)" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="FUEL PUMP Switch" Response="ON" />
+        <CheckItem Challenge="Mixture Control" Response="RICH (if restart has not occured)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="BOTH (or START if propeller is stopped)" />
+        <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Forced landings" FlightPhase="Emergency">
+      <Section Name="Emergency landing without engine power">
+        <CheckItem Challenge="Pilot and Passenger Seat Backs" Response="MOST UPRIGHT POSITION" />
+        <CheckItem Challenge="Seats and Seat Belts" Response="SECURE" />
+        <CheckItem Challenge="Airspeed" Response="70 KIAS (flaps up)" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="OFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Wing Flaps" Response="AS REQUIRED (FULL recommended)" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF (when landing is assured)" />
+        <CheckItem Challenge="Doors" Response="UNLATCH PRIOR TO TOUCHDOWN" />
+        <CheckItem Challenge="Touchdown" Response="SLIGHTLY TAIL LOW" />
+        <CheckItem Challenge="Brakes" Response="APPLY HEAVILY" />
+      </Section>
+      <Section Name="Precautionary landing with engine power">
+        <CheckItem Challenge="Pilot and Passenger Seat Backs" Response="MOST UPRIGHT POSITION" />
+        <CheckItem Challenge="Seats and Seat Belts" Response="SECURE" />
+        <CheckItem Challenge="Airspeed" Response="65 KIAS" />
+        <CheckItem Challenge="Wing Flaps" Response="20°" />
+        <CheckItem Challenge="Selected Field" Response="FLY OVER (noting terrain and obstructions)" />
+        <CheckItem Challenge="Wing Flaps" Response="FULL (on final approach)" />
+        <CheckItem Challenge="Airspeed" Response="65 KIAS" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF (when landing is assured)" />
+        <CheckItem Challenge="Doors" Response="UNLATCH PRIOR TO TOUCHDOWN" />
+        <CheckItem Challenge="Touchdown" Response="SLIGHTLY TAIL LOW" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Brakes" Response="APPLY HEAVILY" />
+      </Section>
+      <Section Name="Ditching">
+        <CheckItem Challenge="ELT" Response="ACTIVATE" />
+        <CheckItem Challenge="Radio" Response="TRANSMIT MAYDAY and SQUAWK 7700" />
+        <CheckItem Challenge="Heavy Objects" Response="SECURE OR JETTISON (if possible)" />
+        <CheckItem Challenge="Pilot and Passenger Seat Backs" Response="MOST UPRIGHT POSITION" />
+        <CheckItem Challenge="Seats and Seat Belts" Response="SECURE" />
+        <CheckItem Challenge="Wing Flaps" Response="20° - FULL" />
+        <CheckItem Challenge="Power" Response="ESTABLISH 300 FT/MIN DESCENT AT 55 KIAS. If no power is available, approach at 70 KIAS with Flaps UP or at 65 KIAS with Flaps 10°." />
+        <CheckItem Challenge="Approach" Response="High Winds, Heavy Seas- INTO THE WIND Light Winds, Heavy Swells - PARALLEL TO SWELLS" />
+        <CheckItem Challenge="Cabin Doors" Response="UNLATCH" />
+        <CheckItem Challenge="Touchdown" Response="LEVEL ATTITUDE AT ESTABLISHED RATE OF DESCENT" />
+        <CheckItem Challenge="Face" Response="CUSHION AT TOUCHDOWN (with folded coat)" />
+        <CheckItem Challenge="Airplane" Response="EVACUATE THROUGH CABIN DOORS" />
+        <CheckItem Challenge="Life Vests and Raft" Response="INFLATE WHEN CLEAR OF AIRPLANE " />
+      </Section>
+    </Checklist>
   </ChecklistBundle>
 </Aircraft>
