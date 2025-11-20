@@ -393,7 +393,7 @@
         <CheckItem Challenge="Wing Flaps" Response="UP" />
       </Section>
     </Checklist>
-    <Checklist Name="Securing Airplane (POH)" FlightPhase="PostFlight">
+    <Checklist Name="Securing Airplane (POH)" FlightPhase="Postflight">
       <Section Name="-">
         <CheckItem Challenge="Parking Brake" Response="SET" />
         <CheckItem Challenge="Throttle Control" Response="IDLE (pull full out)" />
