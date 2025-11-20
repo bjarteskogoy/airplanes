@@ -285,7 +285,7 @@
         <CheckItem Challenge="TRANSPONDER" Response="7700" />
       </Section>
     </Checklist>
-    <Checklist Name="Engine Failures" FlightPhase="Emergency">
+    <Checklist Name="Engine Failures (POH)" FlightPhase="Emergency">
       <Section Name="Engine failure during takeoff roll">
         <CheckItem Challenge="Trottle Control" Response="IDLE (pull full out)" />
         <CheckItem Challenge="Brakes" Response="APPLY" />
@@ -316,7 +316,7 @@
         <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
       </Section>
     </Checklist>
-    <Checklist Name="Forced landings" FlightPhase="Emergency">
+    <Checklist Name="Forced landings (POH)" FlightPhase="Emergency">
       <Section Name="Emergency landing without engine power">
         <CheckItem Challenge="Pilot and Passenger Seat Backs" Response="MOST UPRIGHT POSITION" />
         <CheckItem Challenge="Seats and Seat Belts" Response="SECURE" />
@@ -361,6 +361,50 @@
         <CheckItem Challenge="Face" Response="CUSHION AT TOUCHDOWN (with folded coat)" />
         <CheckItem Challenge="Airplane" Response="EVACUATE THROUGH CABIN DOORS" />
         <CheckItem Challenge="Life Vests and Raft" Response="INFLATE WHEN CLEAR OF AIRPLANE " />
+      </Section>
+    </Checklist>
+    <Checklist Name="Landing (POH)" FlightPhase="DuringFlight">
+      <Section Name="Normal Landing">
+        <CheckItem Challenge="Airspeed" Response="65- 75 KIAS (Flaps UP)" />
+        <CheckItem Challenge="Wing Flaps" Response="AS DESIRED(UP- 10° below 110 KIAS) (10°- FULL below 85 KIAS)" />
+        <CheckItem Challenge="Airspeed" Response="60- 70 KIAS (Flaps FULL)" />
+        <CheckItem Challenge="Elevator Trim Control" Response="ADJUST" />
+        <CheckItem Challenge="Touchdown" Response="MAIN WHEELS FIRST" />
+        <CheckItem Challenge="Landing Roll" Response="LOWER NOSEWHEEL GENTLY" />
+        <CheckItem Challenge="Braking" Response="MINIMUM REQUIRED" />
+      </Section>
+      <Section Name="Short Field Landing">
+        <CheckItem Challenge="Airspeed" Response="65- 75 KIAS (Flaps UP)" />
+        <CheckItem Challenge="Wing Flaps" Response="FULL" />
+        <CheckItem Challenge="Airspeed" Response="61 KIAS (until flare)" />
+        <CheckItem Challenge="Elevator Trim Control" Response="ADJUST" />
+        <CheckItem Challenge="Power" Response="REDUCE TO IDLE (as obstacle is cleared)" />
+        <CheckItem Challenge="Touchdown" Response="MAIN WHEELS FIRST" />
+        <CheckItem Challenge="Brakes" Response="APPLY HEAVILY" />
+        <CheckItem Challenge="Wing Flaps" Response="UP" />
+      </Section>
+      <Section Name="Balked Landing">
+        <CheckItem Challenge="Throttle Control" Response="FULL (push full in)" />
+        <CheckItem Challenge="Wing Flaps" Response="RETRACT to 20°" />
+        <CheckItem Challenge="Climp Speed" Response="60 KIAS" />
+        <CheckItem Challenge="Wing Flaps" Response="10° (as obstacle is cleared), then UP (after reaching a safe altitude and 65 KIAS)" />
+      </Section>
+      <Section Name="After Landing">
+        <CheckItem Challenge="Wing Flaps" Response="UP" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Securing Airplane (POH)" FlightPhase="PostFlight">
+      <Section Name="-">
+        <CheckItem Challenge="Parking Brake" Response="SET" />
+        <CheckItem Challenge="Throttle Control" Response="IDLE (pull full out)" />
+        <CheckItem Challenge="Electrical Equipment" Response="OFF" />
+        <CheckItem Challenge="AVIONICS Switch (BUS 1 and BUS 2)" Response="OFF" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="Control Lock" Response="INSTALL" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="LEFT or RIGHT (to prevent crossfeeding between tanks)" />
       </Section>
     </Checklist>
   </ChecklistBundle>
