@@ -18,9 +18,23 @@
       </head>
       <body>
         <h1><xsl:value-of select="/Aircraft/@Name"/> (<xsl:value-of select="/Aircraft/@Registration"/>)</h1>
-        <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist">
-          <xsl:sort select="@FlightPhase" data-type="text" order="ascending"/>
-          <div class="checklist {@FlightPhase}">
+        <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist[@FlightPhase='Preflight']">
+          <xsl:call-template name="checlist" />
+        </xsl:for-each>
+        <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist[@FlightPhase='DuringFlight']">
+          <xsl:call-template name="checlist" />
+        </xsl:for-each>
+        <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist[@FlightPhase='Emergency']">
+          <xsl:call-template name="checlist" />
+        </xsl:for-each>
+        <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist[@FlightPhase='Postflight']">
+          <xsl:call-template name="checlist" />
+        </xsl:for-each>
+      </body>
+    </html>
+  </xsl:template>
+  <xsl:template name="checlist">
+    <div class="checklist {@FlightPhase}">
             <xsl:value-of select="@Name"/>
           </div>
 
@@ -37,8 +51,5 @@
               </div>
             </xsl:for-each>
           </xsl:for-each>
-        </xsl:for-each>
-      </body>
-    </html>
   </xsl:template>
 </xsl:stylesheet>
