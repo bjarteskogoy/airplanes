@@ -2,9 +2,6 @@ name: Generate HTML from XML
 
 on:
   push:
-    paths:
-      - '**.xml'
-      - '**.xslt'
 
 jobs:
   build:
