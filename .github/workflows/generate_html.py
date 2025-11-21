@@ -6,7 +6,7 @@ import pathlib
 directory = os.getcwd()
 
 # Paths for input XML and output HTML
-xslt_file = os.path.join(directory, ".github\\workflows\\checklists-html.xslt")  # Replace with your XSLT file path
+xslt_file = os.path.join(directory, ".github/workflows/checklists-html.xslt")  # Replace with your XSLT file path
 
 # Parse XML and XSLT
 xslt_tree = ET.parse(xslt_file)
