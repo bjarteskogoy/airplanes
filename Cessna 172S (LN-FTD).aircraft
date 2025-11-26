@@ -63,7 +63,7 @@
   </LoadingPoints>
   <ChecklistBundle>
     <Checklist Name="CLIMB" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="AIRSPEED" Response="80 KIAS" />
         <CheckItem Challenge="THROTTLE" Response="FULL" />
         <CheckItem Challenge="FLAPS" Response="RETRACT at safe altitude" />
@@ -74,7 +74,7 @@
       </Section>
     </Checklist>
     <Checklist Name="AFTER LANDING" FlightPhase="Postflight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Wing Flaps" Response="UP" />
         <CheckItem Challenge="Lights" Response="AS REQUIRED" />
         <CheckItem Challenge="Radio" Response="AS REQUIRED" />
@@ -82,7 +82,7 @@
       </Section>
     </Checklist>
     <Checklist Name="SHUT DOWN" FlightPhase="Postflight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Parking Brake" Response="SET" />
         <CheckItem Challenge="Throttle" Response="IDLE" />
         <CheckItem Challenge="Electrical Equipments" Response="OFF" />
@@ -108,7 +108,7 @@
       </Section>
     </Checklist>
     <Checklist Name="AIR WORK / STALL CHECK" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Loose Articles" Response="Secure" />
         <CheckItem Challenge="Altitude" Response="Minimum 3000 AGL" />
         <CheckItem Challenge="Forced Landing Area" Response="LOCATED" />
@@ -120,7 +120,7 @@
       </Section>
     </Checklist>
     <Checklist Name="DESCENT" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Power" Response="AS DESIRED" />
         <CheckItem Challenge="Mixture" Response="ADJUST" />
         <CheckItem Challenge="PFD BARO" Response="SET" />
@@ -130,7 +130,7 @@
       </Section>
     </Checklist>
     <Checklist Name="APPROACH" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="ATIS" Response="RECEIVED" />
         <CheckItem Challenge="PFD BARO" Response="SET" />
         <CheckItem Challenge="Standby Altimeter" Response="SET" />
@@ -140,7 +140,7 @@
       </Section>
     </Checklist>
     <Checklist Name="PRE LANDING" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Engine Instruments" Response="CHECKED" />
         <CheckItem Challenge="Mixture" Response="RICH" />
         <CheckItem Challenge="FUEL Selector" Response="BOTH" />
@@ -151,7 +151,7 @@
       </Section>
     </Checklist>
     <Checklist Name="DOWNWIND CHECK" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Magnetos" Response="BOTH" />
         <CheckItem Challenge="Master Switch" Response="BOTH" />
         <CheckItem Challenge="Landing Lights" Response="ON" />
@@ -165,7 +165,7 @@
       </Section>
     </Checklist>
     <Checklist Name="GO AROUND" FlightPhase="DuringFlight">
-      <Section Name="New Section" AutoReset="True">
+      <Section Name="-" AutoReset="True">
         <CheckItem Challenge="Throttle" Response="FULL POWER" />
         <CheckItem Challenge="Mixture" Response="RICH" />
         <CheckItem Challenge="Wing Flaps" Response="RETRACT 10° CAREFULLY" />
@@ -175,7 +175,7 @@
       </Section>
     </Checklist>
     <Checklist Name="BEFORE STARTING ENGINE" FlightPhase="Preflight">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="Preflight Inspection" Response="COMPLETE" />
         <CheckItem Challenge="Tow Bar / Chokes" Response="REMOVED and STORED" />
         <CheckItem Challenge="Passenger Briefing" Response="COMPLETE" />
@@ -190,7 +190,7 @@
       </Section>
     </Checklist>
     <Checklist Name="STARTING ENGINE" FlightPhase="Preflight">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="Throttle Control" Response="OPEN 1/4 INCH" />
         <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF" />
         <CheckItem Challenge="STBY BATT Switch" Response="ARM" />
@@ -208,7 +208,7 @@
         <CheckItem Challenge="Mixture Control" Response="SET to FULL RICH 3 to 5 sec Fuel Flow Stable then IDLE CUTOFF" />
         <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
       </Section>
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="MAGNETOS Switch" Response="START" />
         <CheckItem Challenge="Mixture Control" Response="ADVANCE smoothly when engine starts" />
         <CheckItem Challenge="Oil Pressure" Response="CHECK (green within 30 to 60 sec)" />
@@ -222,7 +222,7 @@
       </Section>
     </Checklist>
     <Checklist Name="RUN UP - BEFORE DEPARTURE" FlightPhase="Preflight">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="Nose Into Wind" Response="ALIGN" />
         <CheckItem Challenge="Parking Brake" Response="SET" />
         <CheckItem Challenge="Pilot and Passengers seat backs" Response="MOST UPRIGHT POSITION" />
@@ -255,14 +255,14 @@
       </Section>
     </Checklist>
     <Checklist Name="TAXI" FlightPhase="Preflight">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="Taxi Lights" Response="ON, if necessary" />
         <CheckItem Challenge="Brakes" Response="CHECKED" />
         <CheckItem Challenge="Flight Instruments" Response="CHECKED" />
       </Section>
     </Checklist>
     <Checklist Name="Before, And When Line Up" FlightPhase="Preflight">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="STROBE light" Response="ON" />
         <CheckItem Challenge="LAND Light" Response="ON" />
         <CheckItem Challenge="Final and Runway" Response="CHECKED" />
@@ -271,7 +271,7 @@
       </Section>
     </Checklist>
     <Checklist Name="Engine Failure In Flight" FlightPhase="Emergency">
-      <Section Name="New Section">
+      <Section Name="-">
         <CheckItem Challenge="NOSE DOWN" Response="Trim best glide 70 KIAS" />
         <CheckItem Challenge="SELECT FIELD" Response="CHECK SURFACE WIND" />
         <CheckItem Challenge="ELT" Response="ON" />
