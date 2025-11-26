@@ -203,12 +203,12 @@
         <CheckItem Challenge="Master Switch (BATT ONLY)" Response="ON" />
         <CheckItem Challenge="BEACON Light Switch" Response="ON" />
       </Section>
-      <Section Name="Engine Cold">
+      <Section Name="If Engine Cold">
         <CheckItem Challenge="FUEL PUMP" Response="ON" />
         <CheckItem Challenge="Mixture Control" Response="SET to FULL RICH 3 to 5 sec Fuel Flow Stable then IDLE CUTOFF" />
         <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
       </Section>
-      <Section Name="-">
+      <Section Name="Continue">
         <CheckItem Challenge="MAGNETOS Switch" Response="START" />
         <CheckItem Challenge="Mixture Control" Response="ADVANCE smoothly when engine starts" />
         <CheckItem Challenge="Oil Pressure" Response="CHECK (green within 30 to 60 sec)" />

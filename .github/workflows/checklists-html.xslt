@@ -9,8 +9,10 @@
           body { font-family: Arial, sans-serif; margin: 20px; }
           h1 { font-size: 24px; margin-bottom: 20px; }
           h3 { font-size: 14px; }
-          .checklist { padding: 8px; margin-top: 15px; font-size: 13px; font-weight: bold; }
-          .section { background-color: #E0E0E0; padding: 6px; margin-top: 10px; font-size: 12px; font-weight: bold; }
+          .checklist { padding: 8px; margin-top: 15px; font-size: 13px; font-weight: bold; page-break-after: avoid; }
+          .checklistcontainer { page-break-inside: avoid; }
+          .sectioncontainer { page-break-inside: avoid; }
+          .section { margin-left: 20px; background-color: #E0E0E0; padding: 6px; margin-top: 10px; font-size: 12px; font-weight: bold; page-break-after: avoid; }
           .item { margin-left: 20px; font-size: 11px; margin-top: 4px; }
           .Preflight, .Postflight { background-color: #CCFFCC; }
           .DuringFlight { background-color: #CCE5FF; }
@@ -42,7 +44,7 @@
             <li><xsl:value-of select="@Name"/>, arm: <xsl:value-of select="@LeverArm"/></li>
           </xsl:for-each>
         </ul>
-        <h3>Checklists</h3>
+        <h3 style="page-break-before: always">Checklists</h3>
         <xsl:for-each select="/Aircraft/ChecklistBundle/Checklist[@FlightPhase='Preflight']">
           <xsl:call-template name="checlist" />
         </xsl:for-each>
@@ -60,21 +62,24 @@
   </xsl:template>
   <xsl:template name="checlist">
     <div class="checklist {@FlightPhase}">
-            <xsl:value-of select="@Name"/>
-          </div>
+      <xsl:value-of select="@Name"/>
+    </div>
+    <div class="checklistcontainer">
+      <xsl:for-each select="Section">
+        <div class="sectioncontainer">
+          <xsl:if test="string-length(@Name) &gt; 1">
+            <div class="section">
+              <xsl:value-of select="@Name"/>
+            </div>
+          </xsl:if>
 
-          <xsl:for-each select="Section">
-            <xsl:if test="string-length(@Name) &gt; 1">
-              <div class="section">
-                <xsl:value-of select="@Name"/>
-              </div>
-            </xsl:if>
-
-            <xsl:for-each select="CheckItem">
-              <div class="item">
-                <xsl:value-of select="@Challenge"/>: <xsl:value-of select="@Response"/>
-              </div>
-            </xsl:for-each>
+          <xsl:for-each select="CheckItem">
+            <div class="item">
+              <xsl:value-of select="@Challenge"/>: <xsl:value-of select="@Response"/>
+            </div>
           </xsl:for-each>
+        </div>
+      </xsl:for-each>
+    </div>
   </xsl:template>
 </xsl:stylesheet>
