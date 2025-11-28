@@ -360,7 +360,74 @@
         <CheckItem Challenge="Touchdown" Response="LEVEL ATTITUDE AT ESTABLISHED RATE OF DESCENT" />
         <CheckItem Challenge="Face" Response="CUSHION AT TOUCHDOWN (with folded coat)" />
         <CheckItem Challenge="Airplane" Response="EVACUATE THROUGH CABIN DOORS" />
-        <CheckItem Challenge="Life Vests and Raft" Response="INFLATE WHEN CLEAR OF AIRPLANE " />
+        <CheckItem Challenge="Life Vests and Raft" Response="INFLATE WHEN CLEAR OF AIRPLANE" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Fires (POH)" FlightPhase="Emergency">
+      <Section Name="During start on ground">
+        <CheckItem Challenge="MAGNETOS Switch" Response="START (continue cranking to start the engine)" />
+        <CheckItem Challenge="IF ENGINE STARTS" Response="-" />
+        <CheckItem Challenge="Power" Response="1800 RPM (for a few minutes)" />
+        <CheckItem Challenge="Engine" Response="SHUTDOWN (inspect for damage)" />
+        <CheckItem Challenge="IF ENGINE FAILS TO START" Response="-" />
+        <CheckItem Challenge="Throttle Control" Response="FULL (push full in)" />
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="START (continue cranking)" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="OFF (pull full out)" />
+        <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
+        <CheckItem Challenge="Engine" Response="SECURE" />
+        <CheckItem Challenge="Parking Brake" Response="RELEASE" />
+        <CheckItem Challenge="Fire Extinguisher" Response="OBTAIN (have ground attendants obtain if not installed)" />
+        <CheckItem Challenge="Airplane" Response="EVACUATE" />
+        <CheckItem Challenge="Fire" Response="EXTINGUISH (using fire extinguisher, wool blanket, or dirt)" />
+        <CheckItem Challenge="Fire Damage" Response="INSPECT (repair or replace damaged components and/or wiring before conducting another flight)" />
+      </Section>
+      <Section Name="Engine fire in flight">
+        <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
+        <CheckItem Challenge="FUEL SHUTOFF Valve" Response="OFF (pull full out)" />
+        <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
+        <CheckItem Challenge="Cabin Vents" Response="OPEN (as needed)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
+        <CheckItem Challenge="Airspeed" Response="100 KIAS (If fire is not extinguished, increase glide speed to find an airspeed, within airspeed limitations, which will provide an incombustible mixture)" />
+        <CheckItem Challenge="Forced Landing" Response="EXECUTE (refer to EMERGENCY LANDING WITHOUT ENGINE POWER)" />
+      </Section>
+      <Section Name="Electrical fire in flight">
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
+        <CheckItem Challenge="Cabin Vents" Response="CLOSED (to avoid drafts)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
+        <CheckItem Challenge="Fire Extinguisher" Response="ACTIVATE (if available)" />
+        <CheckItem Challenge="AVIONICS Switch (BUS 1 and BUS 2)" Response="OFF" />
+        <CheckItem Challenge="All Other Switches (except MAGNETOS switch)" Response="OFF" />
+        <CheckItem Challenge="AFTER THE FIRE EXTINGUISHER HAS BEEN USED, MAKE SURE THAT THE FIRE IS EXTINGUISHED BEFORE EXTERIOR AIR IS USED TO REMOVE SMOKE FROM THE CABIN." Response="OK" />
+        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out) (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="IF FIRE HAS BEEN EXTINGUISHED AND ELECTRICAL POWER IS NECESSARY FOR CONTINUED FLIGHT TO NEAREST SUITABLE AIRPORT OR LANDING AREA" Response="OK" />
+        <CheckItem Challenge="Circuit Breakers" Response="CHECK (for OPEN circuit(s), do not reset)" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="ON" />
+        <CheckItem Challenge="STBY BATT Switch" Response="ARM" />
+        <CheckItem Challenge="AVIONICS Switch (BUS 1)" Response="ON" />
+        <CheckItem Challenge="AVIONICS Switch (BUS 2)" Response="ON" />
+      </Section>
+      <Section Name="Cabin fire">
+        <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
+        <CheckItem Challenge="Cabin Vents" Response="CLOSED (to avoid drafts)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
+        <CheckItem Challenge="Fire Extinguisher" Response="ACTIVATE (if available)" />
+        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out) (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="Land the airplane as soon as possible to inspect for damage" Response="EXECUTE" />
+      </Section>
+      <Section Name="Wing fire">
+        <CheckItem Challenge="LAND and TAXI Light Switches" Response="OFF" />
+        <CheckItem Challenge="NAV Light Switch" Response="OFF" />
+        <CheckItem Challenge="STROBE Light Switch" Response="OFF" />
+        <CheckItem Challenge="PITOT HEAT Switch" Response="OFF" />
       </Section>
     </Checklist>
     <Checklist Name="Landing (POH)" FlightPhase="DuringFlight">
