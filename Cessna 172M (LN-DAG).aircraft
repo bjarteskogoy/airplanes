@@ -61,4 +61,358 @@
     <LoadingPoint Name="Baggage 1" LeverArm="95.00" LeverArmLat="0.00" DefaultValue="0.00" />
     <LoadingPoint Name="Baggage 2" LeverArm="123.00" LeverArmLat="0.00" DefaultValue="0.00" />
   </LoadingPoints>
+  <ChecklistBundle>
+    <Checklist Name="Preflight Inspection" FlightPhase="Preflight">
+      <Section Name="Cabin">
+        <CheckItem Challenge="Fuel (Wings and Filter)" Response="DRAINED" />
+        <CheckItem Challenge="Documents" Response="CHECK" />
+        <CheckItem Challenge="Fire Extinguisher and First Aid Kit" Response="CHECK" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Master Switch" Response="ON" />
+        <CheckItem Challenge="Flaps" Response="DOWN" />
+        <CheckItem Challenge="Fuel Quantity" Response="CHECK" />
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="Gust Lock" Response="REMOVED" />
+        <CheckItem Challenge="Cabin Doors and Windows" Response="CHECK" />
+      </Section>
+      <Section Name="Empennage">
+        <CheckItem Challenge="Baggage Door" Response="LOCKED" />
+        <CheckItem Challenge="Tail Surface" Response="CHECK" />
+        <CheckItem Challenge="Tail Section" Response="CHECK" />
+        <CheckItem Challenge="Antennas" Response="CHECK" />
+      </Section>
+      <Section Name="Right Wing">
+        <CheckItem Challenge="R.H Flap" Response="CHECK" />
+        <CheckItem Challenge="R.H Aileron" Response="CHECK" />
+        <CheckItem Challenge="NAV and STROBE Lights" Response="CHECK" />
+        <CheckItem Challenge="R.H Wing Surface" Response="CHECK" />
+        <CheckItem Challenge="R.H Main Wheel and Brakes" Response="CHECK" />
+        <CheckItem Challenge="Fuel Quantity R.H Wing" Response="CHECK" />
+        <CheckItem Challenge="Fuel Cap R.H Wing" Response="SECURE" />
+      </Section>
+      <Section Name="Nose">
+        <CheckItem Challenge="Oil Quantity (6-8 / 5-7 quarts)" Response="CHECK" />
+        <CheckItem Challenge="LANDING and Taxi Lights" Response="CHECK" />
+        <CheckItem Challenge="Air Filter" Response="CHECK" />
+        <CheckItem Challenge="Fan Belt and Generator" Response="CHECK" />
+        <CheckItem Challenge="Propeller and Spinner" Response="CHECK" />
+        <CheckItem Challenge="Nosewheel Strut, Tire and Link" Response="CHECK" />
+        <CheckItem Challenge="Engine Cowling" Response="SECURE" />
+        <CheckItem Challenge="Static Port" Response="CHECK" />
+      </Section>
+      <Section Name="Left Wing">
+        <CheckItem Challenge="Fuel Quantity L.H Wing" Response="CHECK" />
+        <CheckItem Challenge="Fuel Cap L.H Wing" Response="SECURE" />
+        <CheckItem Challenge="Pitot Tube" Response="CHECK" />
+        <CheckItem Challenge="Stall Warning" Response="CHECK" />
+        <CheckItem Challenge="L.H Fuel Vent" Response="CHECK" />
+        <CheckItem Challenge="Left Wing Surface" Response="CHECK" />
+        <CheckItem Challenge="NAV and STROBE Lights" Response="CHECK" />
+        <CheckItem Challenge="L.H Aileron" Response="CHECK" />
+        <CheckItem Challenge="L.H Flap" Response="CHECK" />
+        <CheckItem Challenge="L.H Main Wheel and Brakes" Response="CHECK" />
+      </Section>
+      <Section Name="Final">
+        <CheckItem Challenge="LANDING and Taxi Lights" Response="CHECK" />
+        <CheckItem Challenge="NAV and STROBE Lights" Response="CHECK" />
+        <CheckItem Challenge="GMU 11 Magnetometer (location per STC — verify on aircraft)" Response="CHECK (security of attachment)" />
+        <CheckItem Challenge="Passenger Briefing (evacuation, life jackets)" Response="COMPLETE" />
+        <CheckItem Challenge="Weight and Balance" Response="CHECK" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Start" FlightPhase="Preflight">
+      <Section Name="Before Start">
+        <CheckItem Challenge="Preflight Inspection" Response="COMPLETE" />
+        <CheckItem Challenge="Seats and Belts" Response="ADJUST and LOCKED" />
+        <CheckItem Challenge="Parking Brake" Response="SET" />
+        <CheckItem Challenge="Flight Controls" Response="FREE and CORRECT" />
+        <CheckItem Challenge="Elevator Trim Control" Response="CHECK and SET" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Circuit Breakers" Response="CHECK IN" />
+        <CheckItem Challenge="AVIONICS Switch" Response="OFF" />
+        <CheckItem Challenge="Primer (hot - cold)" Response="2-6, LOCKED" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="Throttle" Response="OPEN 1/2 CM" />
+        <CheckItem Challenge="CARB HEAT" Response="OFF" />
+        <CheckItem Challenge="Cabin Doors and Windows" Response="CLOSED and LOCKED" />
+        <CheckItem Challenge="Propeller Area" Response="CLEAR" />
+      </Section>
+      <Section Name="Start Engine">
+        <CheckItem Challenge="Master Switch (BATT only)" Response="ON" />
+        <CheckItem Challenge="BEACON Light Switch" Response="ON" />
+        <CheckItem Challenge="G5 Displays (PFD and HSI)" Response="CHECK (verify powered on, ALIGNING displayed)" />
+        <CheckItem Challenge="G5 Battery Status" Response="CHECK (verify GREEN indicator)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="START" />
+        <CheckItem Challenge="Throttle" Response="1000 RPM" />
+        <CheckItem Challenge="Oil Pressure" Response="CHECK (green within 30-60 sec)" />
+        <CheckItem Challenge="Master Switch ALT" Response="ON" />
+        <CheckItem Challenge="Flaps" Response="CHECK and UP" />
+        <CheckItem Challenge="G5 AHRS Alignment" Response="CHECK (ALIGNING cleared, no red X flags)" />
+        <CheckItem Challenge="G5 HSI Heading" Response="CHECK (agrees with magnetic compass)" />
+        <CheckItem Challenge="Radios (ATIS-GND-TWR)" Response="ON" />
+        <CheckItem Challenge="NAV Light Switch" Response="ON as required" />
+        <CheckItem Challenge="Altimeters (QNH)" Response="SET" />
+      </Section>
+      <Section Name="Before Taxi">
+        <CheckItem Challenge="Taxi Light" Response="ON if necessary" />
+        <CheckItem Challenge="Brakes" Response="CHECK" />
+        <CheckItem Challenge="Flight Instruments" Response="CHECK" />
+      </Section>
+      <Section Name="RUN UP">
+        <CheckItem Challenge="Nose Into Wind" Response="ALIGN" />
+        <CheckItem Challenge="Brakes" Response="CHECK and SET" />
+        <CheckItem Challenge="Area Free" Response="CLEAR" />
+        <CheckItem Challenge="Throttle" Response="1700 RPM" />
+        <CheckItem Challenge="Oil Pressure / Temperature" Response="CHECK" />
+        <CheckItem Challenge="Ammeter" Response="CHECK" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="CHECK (max 125 drop +/- 50)" />
+        <CheckItem Challenge="CARB HEAT" Response="CHECK (RPM drop)" />
+        <CheckItem Challenge="Throttle" Response="IDLE (650-850 RPM)" />
+        <CheckItem Challenge="Throttle" Response="1000 RPM" />
+      </Section>
+      <Section Name="Before Takeoff">
+        <CheckItem Challenge="MAGNETOS Switch" Response="BOTH" />
+        <CheckItem Challenge="Master Switch" Response="BOTH" />
+        <CheckItem Challenge="CARB HEAT" Response="OFF" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Flaps" Response="0-10°" />
+        <CheckItem Challenge="Instruments" Response="CHECK" />
+        <CheckItem Challenge="G5 HSI Heading" Response="VERIFY (agrees with runway HDG and compass)" />
+        <CheckItem Challenge="Transponder" Response="ON" />
+        <CheckItem Challenge="Departure Briefing" Response="REVIEWED" />
+        <CheckItem Challenge="Compass Heading (on line-up)" Response="CHECK" />
+        <CheckItem Challenge="Takeoff Time" Response="LOGGED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="CLIMB" FlightPhase="DuringFlight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="Flaps" Response="UP (300-500 ft)" />
+        <CheckItem Challenge="Mixture" Response="LEAN as required" />
+        <CheckItem Challenge="Engine Instruments" Response="CHECK" />
+        <CheckItem Challenge="Altimeters" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="CRUISE" FlightPhase="DuringFlight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="Power" Response="SET" />
+        <CheckItem Challenge="Mixture" Response="LEAN as required" />
+        <CheckItem Challenge="Engine Instruments" Response="CHECK" />
+        <CheckItem Challenge="Fuel Quantity / Balance" Response="CHECK" />
+        <CheckItem Challenge="Heading" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="AIR WORK / STALL CHECK" FlightPhase="DuringFlight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="Loose Articles" Response="SECURE" />
+        <CheckItem Challenge="Altitude" Response="Minimum 3000 ft AGL" />
+        <CheckItem Challenge="Forced Landing Area" Response="LOCATED" />
+        <CheckItem Challenge="Seat Belts" Response="ON" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="Instruments" Response="CHECK" />
+        <CheckItem Challenge="Weight and Balance" Response="WITHIN LIMITS" />
+        <CheckItem Challenge="Other Traffic" Response="CHECK" />
+        <CheckItem Challenge="CARB HEAT" Response="AS REQUIRED" />
+        <CheckItem Challenge="Clearance" Response="RECEIVED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="APPROACH TO LANDING" FlightPhase="DuringFlight">
+      <Section Name="Approach (before traffic pattern)" AutoReset="True">
+        <CheckItem Challenge="ATIS" Response="RECEIVED" />
+        <CheckItem Challenge="Altimeters (QNH)" Response="SET" />
+        <CheckItem Challenge="Heading" Response="SET" />
+        <CheckItem Challenge="LANDING Light" Response="ON" />
+      </Section>
+      <Section Name="Pre-Landing" AutoReset="True">
+        <CheckItem Challenge="Engine Instruments" Response="CHECK" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="LANDING Light" Response="ON" />
+        <CheckItem Challenge="Seats and Belts" Response="ADJUST and LOCKED" />
+        <CheckItem Challenge="Flaps" Response="SET" />
+        <CheckItem Challenge="CARB HEAT" Response="ON (before closing throttle)" />
+      </Section>
+      <Section Name="Downwind" AutoReset="True">
+        <CheckItem Challenge="Primer" Response="LOCKED" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="BOTH" />
+        <CheckItem Challenge="Master Switch" Response="BOTH" />
+        <CheckItem Challenge="LANDING Light" Response="AS REQUIRED" />
+        <CheckItem Challenge="CARB HEAT" Response="ON (below 2000 RPM)" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Brake Pressure" Response="CHECK" />
+        <CheckItem Challenge="Harness" Response="CHECK" />
+        <CheckItem Challenge="Doors" Response="LOCKED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="GO AROUND" FlightPhase="DuringFlight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="Throttle" Response="FULL POWER" />
+        <CheckItem Challenge="CARB HEAT" Response="OFF" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="Flaps" Response="RETRACT CAREFULLY" />
+        <CheckItem Challenge="Trim" Response="SET" />
+      </Section>
+    </Checklist>
+    <Checklist Name="AFTER LANDING" FlightPhase="Postflight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="CARB HEAT" Response="OFF" />
+        <CheckItem Challenge="Flaps" Response="UP" />
+        <CheckItem Challenge="Lights" Response="AS REQUIRED" />
+        <CheckItem Challenge="Radios" Response="AS REQUIRED" />
+        <CheckItem Challenge="Landing Time" Response="LOGGED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="SHUT DOWN" FlightPhase="Postflight">
+      <Section Name="-" AutoReset="True">
+        <CheckItem Challenge="Throttle" Response="1000 RPM" />
+        <CheckItem Challenge="Radios" Response="OFF" />
+        <CheckItem Challenge="Transponder" Response="OFF" />
+        <CheckItem Challenge="Lights (NAV, Taxi)" Response="OFF" />
+        <CheckItem Challenge="Throttle" Response="1000 RPM" />
+        <CheckItem Challenge="Mixture" Response="FULL LEAN" />
+        <CheckItem Challenge="BEACON Light Switch" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="All Switches" Response="OFF" />
+        <CheckItem Challenge="Gust Lock" Response="INSTALLED" />
+        <CheckItem Challenge="Documents" Response="FILLED" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Engine Failure In Flight" FlightPhase="Emergency">
+      <Section Name="-">
+        <CheckItem Challenge="NOSE DOWN" Response="Trim best glide 70 KIAS" />
+        <CheckItem Challenge="SELECT FIELD" Response="CHECK SURFACE WIND" />
+        <CheckItem Challenge="SET COURSE" Response="-" />
+        <CheckItem Challenge="ELT" Response="ON" />
+        <CheckItem Challenge="Identify" Response="CHECK" />
+        <CheckItem Challenge="Primer" Response="LOCKED" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="BOTH" />
+        <CheckItem Challenge="Master Switch" Response="BOTH" />
+        <CheckItem Challenge="CARB HEAT" Response="ON" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="Radio" Response="MAYDAY CALL" />
+        <CheckItem Challenge="Transponder" Response="7700" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Engine Failures" FlightPhase="Emergency">
+      <Section Name="Engine Failure on Runway">
+        <CheckItem Challenge="Throttle" Response="IDLE" />
+        <CheckItem Challenge="Brakes" Response="APPLY TO STOP" />
+        <CheckItem Challenge="IF INSUFFICIENT RUNWAY" Response="-" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="OFF" />
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+      </Section>
+      <Section Name="Engine Failure After Takeoff">
+        <CheckItem Challenge="Airspeed (nose down)" Response="70 KIAS" />
+        <CheckItem Challenge="Throttle" Response="IDLE" />
+        <CheckItem Challenge="Flaps" Response="AS REQUIRED" />
+        <CheckItem Challenge="Land" Response="STRAIGHT AHEAD" />
+        <CheckItem Challenge="IF INSUFFICIENT RUNWAY" Response="-" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="OFF" />
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+      </Section>
+      <Section Name="Engine Failure In Flight - Prop Rotating">
+        <CheckItem Challenge="Fly the Aircraft" Response="70 KIAS" />
+        <CheckItem Challenge="ELT" Response="ON" />
+        <CheckItem Challenge="Landing Area" Response="SELECT" />
+        <CheckItem Challenge="Primer" Response="LOCKED" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="CHECK" />
+        <CheckItem Challenge="CARB HEAT" Response="ON" />
+        <CheckItem Challenge="Throttle" Response="IDLE" />
+        <CheckItem Challenge="Mixture" Response="RICH" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="BOTH" />
+        <CheckItem Challenge="MAYDAY Call" Response="COMPLETE" />
+        <CheckItem Challenge="Passenger" Response="BRIEFED" />
+        <CheckItem Challenge="Seats and Belts" Response="LOCKED" />
+        <CheckItem Challenge="Transponder" Response="7700" />
+        <CheckItem Challenge="IF TIME AND ALTITUDE PERMITS" Response="-" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="Throttle" Response="FULL (3-5 sec)" />
+        <CheckItem Challenge="Mixture (when engine starts)" Response="RICH" />
+      </Section>
+      <Section Name="Engine Failure In Flight - Prop Not Rotating">
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="Throttle" Response="OPEN 1 CM" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="START" />
+        <CheckItem Challenge="Mixture (when engine starts)" Response="RICH" />
+      </Section>
+      <Section Name="Emergency Landing (unable to restart)">
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Master Switch (when flaps selected)" Response="OFF" />
+        <CheckItem Challenge="Doors" Response="OPEN" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Fires" FlightPhase="Emergency">
+      <Section Name="Fire During Start">
+        <CheckItem Challenge="Starter" Response="CONTINUE CRANKING" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="Throttle" Response="FULL OPEN" />
+        <CheckItem Challenge="IF FIRE CONTINUES" Response="-" />
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="OFF" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="Aircraft" Response="EVACUATE" />
+        <CheckItem Challenge="Fire Extinguisher" Response="AS NECESSARY" />
+      </Section>
+      <Section Name="Engine Fire In Flight">
+        <CheckItem Challenge="FUEL SELECTOR Valve" Response="OFF" />
+        <CheckItem Challenge="Mixture" Response="IDLE CUTOFF" />
+        <CheckItem Challenge="Throttle" Response="FULL OPEN" />
+        <CheckItem Challenge="Cabin Heat and Vent" Response="CLOSED" />
+      </Section>
+      <Section Name="Electrical Fire">
+        <CheckItem Challenge="Master Switch" Response="OFF" />
+        <CheckItem Challenge="Electrical Switches" Response="ALL OFF" />
+        <CheckItem Challenge="Fire" Response="EXTINGUISH" />
+        <CheckItem Challenge="Master Switch" Response="ON" />
+        <CheckItem Challenge="Radio" Response="ON" />
+      </Section>
+    </Checklist>
+    <Checklist Name="Other Emergencies" FlightPhase="Emergency">
+      <Section Name="If Voltage Drop">
+        <CheckItem Challenge="Electrical Load" Response="REDUCE" />
+        <CheckItem Challenge="ALT Output / ALT Field" Response="RESET after 3 min" />
+        <CheckItem Challenge="IF CIRCUIT BREAKERS NOT TRIPPED" Response="-" />
+        <CheckItem Challenge="Alternator" Response="OFF 30 sec" />
+        <CheckItem Challenge="Alternator" Response="ON CHECK" />
+        <CheckItem Challenge="IF NO CHARGE" Response="-" />
+        <CheckItem Challenge="Alternator" Response="OFF" />
+        <CheckItem Challenge="Electrical Load" Response="MINIMUM" />
+        <CheckItem Challenge="LAND ASAP" Response="EXECUTE" />
+      </Section>
+      <Section Name="Loss of Oil Pressure">
+        <CheckItem Challenge="Power" Response="REDUCE" />
+        <CheckItem Challenge="Oil Pressure" Response="CHECK" />
+        <CheckItem Challenge="If unable to restore" Response="LAND ASAP" />
+      </Section>
+      <Section Name="Emergency Exit on Ground">
+        <CheckItem Challenge="Personal Equipment" Response="DISCONNECT" />
+        <CheckItem Challenge="Doors" Response="OPEN" />
+        <CheckItem Challenge="Aircraft" Response="ABANDON (passengers first if possible)" />
+      </Section>
+    </Checklist>
+    <Checklist Name="G5 Failures" FlightPhase="Emergency">
+      <Section Name="G5 PFD Failure">
+        <CheckItem Challenge="G5 HSI" Response="CHECK (automatically reverts to attitude display)" />
+        <CheckItem Challenge="Magnetic Compass" Response="USE FOR HEADING" />
+      </Section>
+      <Section Name="ALIGNING KEEP WINGS LEVEL displayed">
+        <CheckItem Challenge="G5 Attitude" Response="INVALID (use standby/magnetic compass)" />
+        <CheckItem Challenge="Aircraft" Response="KEEP WINGS LEVEL until alignment complete" />
+      </Section>
+      <Section Name="NO BATT displayed on G5">
+        <CheckItem Challenge="IMC Flight" Response="DO NOT CONDUCT" />
+        <CheckItem Challenge="G5 Internal Battery" Response="Provides up to 4 hours if aircraft power lost" />
+      </Section>
+    </Checklist>
+  </ChecklistBundle>
 </Aircraft>
