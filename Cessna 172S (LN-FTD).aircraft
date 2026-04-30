@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Aircraft AirframeType="Aeroplane" MinimumRunwayLengthMetres="0" Name="Cessna 172S" Registration="LN-FTD" HexCode="47859A" FuelType="AvGas100LL" AlternateFuelType="AvGas100LL" FuelMeasurementType="Volume" FuelMeasurementVolumeType="Litres" FuelMeasurementMassType="Kilograms" TaxiFuel="5.300000" LandingFuel="5.000000" FinalReserveMinutes="0" MaxFuel="200.000000" WeightBalanceType="Standard" EmptyWeight="786.300000" MaximumWeight="1156.700000" EmptyArmLon="41.81" EmptyArmLat="0.00" MinimumArmLat="0.00" MaximumArmLat="0.00" Type="C172" ColourMarkings="WHITE WITH BLUE MARKINGS" ServiceCeiling="14000" Equipment1="BGLOVY" Equipment2="S" OtherCommsEquipment="" OtherNavEquipment="" PbnEquipment="" FuelContingency="0.05" HoldingMinutes="45" HourlyCost="2160" HourlyCostIncludesFuel="True" GlideAirspeed="68.00" GlideRatio="9.00" DefaultLevel="3000" EnvelopeType="DatumDistance" Envelope="35.00,680.000000,35.00,884.500000,41.00,1156.700000,47.30,1156.700000,47.30,680.400000">
+<Aircraft AirframeType="Aeroplane" MinimumRunwayLengthMetres="0" Name="Cessna 172S" Registration="LN-FTD" HexCode="47859A" FuelType="AvGas100LL" AlternateFuelType="AvGas100LL" FuelMeasurementType="Volume" FuelMeasurementVolumeType="Litres" FuelMeasurementMassType="Kilograms" TaxiFuel="5.300000" LandingFuel="5.000000" FinalReserveMinutes="0" MaxFuel="200.000000" WeightBalanceType="Standard" EmptyWeight="786.300000" MaximumWeight="1156.700000" EmptyArmLon="41.81" EmptyArmLat="0.00" MinimumArmLat="0.00" MaximumArmLat="0.00" Type="C172" ColourMarkings="WHITE WITH BLUE MARKINGS" ServiceCeiling="14000" Equipment1="BGLOVY" Equipment2="S" OtherCommsEquipment="" OtherNavEquipment="" PbnEquipment="" FuelContingency="0.05" HoldingMinutes="45" HourlyCost="2220" HourlyCostIncludesFuel="True" GlideAirspeed="68.00" GlideRatio="9.00" DefaultLevel="3000" EnvelopeType="DatumDistance" Envelope="35.00,680.000000,35.00,884.500000,41.00,1156.700000,47.30,1156.700000,47.30,680.400000">
   <ClimbProfile FpmSL="729.000000" FpmSC="233.000000" IndicatedAirspeed="74.000000" FuelBurnSL="39.700000" FuelBurnSC="33.700000" />
   <DescentProfile Fpm="-700.000000" IndicatedAirspeed="116.000000" FuelBurn="29.000000" />
   <CruiseProfiles>
@@ -293,7 +293,7 @@
         <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
         <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
         <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
-        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />      
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
       </Section>
       <Section Name="Engine failure immediatly after takeoff">
         <CheckItem Challenge="Airspeed" Response="70 KIAS (flaps UP)" />
@@ -302,7 +302,7 @@
         <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
         <CheckItem Challenge="Wing Flaps" Response="AS REQUIRED (FULL recommended)" />
         <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
-        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />      
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
         <CheckItem Challenge="Cabin Door" Response="UNLATCH" />
         <CheckItem Challenge="Land" Response="STRAIGHT AHEAD" />
       </Section>
@@ -365,25 +365,18 @@
     </Checklist>
     <Checklist Name="Fires (POH)" FlightPhase="Emergency">
       <Section Name="During start on ground">
-        <CheckItem Challenge="MAGNETOS Switch" Response="START (continue cranking to start the engine)" />
-        <CheckItem Challenge="IF ENGINE STARTS" Response="-" />
-        <CheckItem Challenge="Power" Response="1800 RPM (for a few minutes)" />
-        <CheckItem Challenge="Engine" Response="SHUTDOWN (inspect for damage)" />
-        <CheckItem Challenge="IF ENGINE FAILS TO START" Response="-" />
-        <CheckItem Challenge="Throttle Control" Response="FULL (push full in)" />
+        <CheckItem Challenge="MAGNETOS Switch" Response="START (continue cranking to start the  engine)" />
+        <CheckItem Challenge="Seats and Seat Belts" Response="SECURE" />
+        <CheckItem Challenge="Airspeed" Response="70 KIAS (flaps up)" />
         <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
-        <CheckItem Challenge="MAGNETOS Switch" Response="START (continue cranking)" />
         <CheckItem Challenge="FUEL SHUTOFF Valve" Response="OFF (pull full out)" />
-        <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
         <CheckItem Challenge="MAGNETOS Switch" Response="OFF" />
+        <CheckItem Challenge="Wing Flaps" Response="AS REQUIRED (FULL recommended)" />
         <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
-        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
-        <CheckItem Challenge="Engine" Response="SECURE" />
-        <CheckItem Challenge="Parking Brake" Response="RELEASE" />
-        <CheckItem Challenge="Fire Extinguisher" Response="OBTAIN (have ground attendants obtain if not installed)" />
-        <CheckItem Challenge="Airplane" Response="EVACUATE" />
-        <CheckItem Challenge="Fire" Response="EXTINGUISH (using fire extinguisher, wool blanket, or dirt)" />
-        <CheckItem Challenge="Fire Damage" Response="INSPECT (repair or replace damaged components and/or wiring before conducting another flight)" />
+        <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF (when landing is assured)" />
+        <CheckItem Challenge="Doors" Response="UNLATCH PRIOR TO TOUCHDOWN" />
+        <CheckItem Challenge="Touchdown" Response="SLIGHTLY TAIL LOW" />
+        <CheckItem Challenge="Brakes" Response="APPLY HEAVILY" />
       </Section>
       <Section Name="Engine fire in flight">
         <CheckItem Challenge="Mixture Control" Response="IDLE CUTOFF (pull full out)" />
@@ -391,22 +384,22 @@
         <CheckItem Challenge="FUEL PUMP Switch" Response="OFF" />
         <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
         <CheckItem Challenge="Cabin Vents" Response="OPEN (as needed)" />
-        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
-        <CheckItem Challenge="Airspeed" Response="100 KIAS (If fire is not extinguished, increase glide speed to find an airspeed, within airspeed limitations, which will provide an incombustible mixture)" />
-        <CheckItem Challenge="Forced Landing" Response="EXECUTE (refer to EMERGENCY LANDING WITHOUT ENGINE POWER)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in)  (to avoid drafts)" />
+        <CheckItem Challenge="Airspeed" Response="100 KIAS (If fire is not extinguished, increase glide  speed to find an airspeed, within airspeed limitations, which will  provide an incombustible mixture)" />
+        <CheckItem Challenge="Forced Landing" Response="EXECUTE (refer to EMERGENCY LANDING  WITHOUT ENGINE POWER)" />
       </Section>
       <Section Name="Electrical fire in flight">
         <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
         <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
         <CheckItem Challenge="Cabin Vents" Response="CLOSED (to avoid drafts)" />
-        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full  in) (to avoid drafts)" />
         <CheckItem Challenge="Fire Extinguisher" Response="ACTIVATE (if available)" />
         <CheckItem Challenge="AVIONICS Switch (BUS 1 and BUS 2)" Response="OFF" />
         <CheckItem Challenge="All Other Switches (except MAGNETOS switch)" Response="OFF" />
-        <CheckItem Challenge="AFTER THE FIRE EXTINGUISHER HAS BEEN USED, MAKE SURE THAT THE FIRE IS EXTINGUISHED BEFORE EXTERIOR AIR IS USED TO REMOVE SMOKE FROM THE CABIN." Response="OK" />
-        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely extinguished)" />
-        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out) (when sure that fire is completely extinguished)" />
-        <CheckItem Challenge="IF FIRE HAS BEEN EXTINGUISHED AND ELECTRICAL POWER IS NECESSARY FOR CONTINUED FLIGHT TO NEAREST SUITABLE AIRPORT OR LANDING AREA" Response="OK" />
+        <CheckItem Challenge="AFTER THE FIRE EXTINGUISHER HAS BEEN USED,  MAKE SURE THAT THE FIRE IS EXTINGUISHED  BEFORE EXTERIOR AIR IS USED TO REMOVE SMOKE  FROM THE CABIN." Response="OK" />
+        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely  extinguished)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out)  (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="IF FIRE HAS BEEN EXTINGUISHED AND ELECTRICAL POWER  IS NECESSARY FOR CONTINUED FLIGHT TO NEAREST  SUITABLE AIRPORT OR LANDING AREA" Response="OK" />
         <CheckItem Challenge="Circuit Breakers" Response="CHECK (for OPEN circuit(s), do not reset)" />
         <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="ON" />
         <CheckItem Challenge="STBY BATT Switch" Response="ARM" />
@@ -417,10 +410,10 @@
         <CheckItem Challenge="STBY BATT Switch" Response="OFF" />
         <CheckItem Challenge="MASTER Switch (ALT and BAT)" Response="OFF" />
         <CheckItem Challenge="Cabin Vents" Response="CLOSED (to avoid drafts)" />
-        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full in) (to avoid drafts)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="OFF (push full  in) (to avoid drafts)" />
         <CheckItem Challenge="Fire Extinguisher" Response="ACTIVATE (if available)" />
-        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely extinguished)" />
-        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out) (when sure that fire is completely extinguished)" />
+        <CheckItem Challenge="Cabin Vents" Response="OPEN (when sure that fire is completely  extinguished)" />
+        <CheckItem Challenge="CABIN HT and CABIN AIR Control Knobs" Response="ON (pull full out)  (when sure that fire is completely extinguished)" />
         <CheckItem Challenge="Land the airplane as soon as possible to inspect for damage" Response="EXECUTE" />
       </Section>
       <Section Name="Wing fire">
